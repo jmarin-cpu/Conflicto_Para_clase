@@ -1,0 +1,275 @@
+:host {
+  display: block;
+}
+
+main {
+  color: #183b35;
+}
+
+.hero,
+.destinations,
+.travel-tips {
+  margin: 0 auto;
+  max-width: 1120px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.hero {
+  align-items: center;
+  display: grid;
+  gap: 48px;
+  grid-template-columns: 1fr 0.9fr;
+  min-height: 480px;
+  padding-bottom: 64px;
+  padding-top: 64px;
+}
+
+.hero-copy {
+  max-width: 540px;
+}
+
+.eyebrow {
+  color: #41816a;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  margin: 0 0 14px;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  font-size: clamp(2.5rem, 5vw, 4.25rem);
+  letter-spacing: -0.055em;
+  line-height: 1.05;
+  margin-bottom: 20px;
+}
+
+.hero-description {
+  color: #5e706a;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 28px;
+  max-width: 440px;
+}
+
+.primary-link {
+  background-color: #1b6b55;
+  border-radius: 6px;
+  color: #ffffff;
+  display: inline-block;
+  font-weight: 600;
+  padding: 13px 20px;
+  text-decoration: none;
+}
+
+.primary-link:hover,
+.primary-link:focus-visible {
+  background-color: #15543f;
+}
+
+.hero-art {
+  align-items: flex-end;
+  background: linear-gradient(160deg, #d9eee6 0%, #f5e5c9 100%);
+  border-radius: 180px 180px 16px 16px;
+  display: flex;
+  height: 340px;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.sun {
+  background-color: #e7ad68;
+  border-radius: 50%;
+  height: 82px;
+  position: absolute;
+  right: 20%;
+  top: 48px;
+  width: 82px;
+}
+
+.mountain {
+  bottom: 42px;
+  clip-path: polygon(50% 0, 100% 100%, 0 100%);
+  position: absolute;
+}
+
+.mountain-back {
+  background-color: #91b9a5;
+  height: 210px;
+  left: 4%;
+  width: 72%;
+}
+
+.mountain-front {
+  background-color: #4e8c70;
+  height: 160px;
+  right: -8%;
+  width: 88%;
+}
+
+.hero-caption {
+  background-color: #ffffff;
+  border-radius: 30px;
+  bottom: 18px;
+  color: #355c4d;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 10px 16px;
+  position: absolute;
+}
+
+.destinations {
+  padding-bottom: 76px;
+  padding-top: 30px;
+}
+
+.section-heading {
+  margin-bottom: 30px;
+}
+
+.section-heading h2,
+.travel-tips h2 {
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  letter-spacing: -0.04em;
+  margin-bottom: 10px;
+}
+
+.section-heading > p:last-child,
+.destination-info > p:last-child,
+.travel-tips > div > p:last-child {
+  color: #687a73;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.destination-grid {
+  display: grid;
+  gap: 22px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.destination-card {
+  background-color: #ffffff;
+  border: 1px solid #e5ebe7;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.destination-art {
+  align-items: center;
+  display: flex;
+  height: 180px;
+  justify-content: center;
+}
+
+.destination-art span {
+  font-size: 3.2rem;
+}
+
+.kyoto {
+  background: linear-gradient(135deg, #f3e5d8, #dfc2ad);
+}
+
+.patagonia {
+  background: linear-gradient(135deg, #dcece6, #9dbdaf);
+}
+
+.lisbon {
+  background: linear-gradient(135deg, #f8e9c8, #b9d7d1);
+}
+
+.destination-info {
+  padding: 20px;
+}
+
+.destination-country {
+  color: #41816a;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  margin-bottom: 8px;
+}
+
+.destination-info h3 {
+  font-size: 1.15rem;
+  margin-bottom: 8px;
+}
+
+.travel-tips {
+  align-items: center;
+  background-color: #edf5f0;
+  border-radius: 14px;
+  display: flex;
+  gap: 22px;
+  margin-bottom: 72px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+.tips-icon {
+  align-items: center;
+  background-color: #d5e9dc;
+  border-radius: 50%;
+  color: #34745b;
+  display: flex;
+  flex: 0 0 52px;
+  font-size: 1.5rem;
+  height: 52px;
+  justify-content: center;
+}
+
+.travel-tips .eyebrow {
+  margin-bottom: 8px;
+}
+
+.travel-tips h2 {
+  font-size: 1.6rem;
+}
+
+@media (max-width: 760px) {
+  .hero {
+    gap: 36px;
+    grid-template-columns: 1fr;
+    padding-bottom: 48px;
+    padding-top: 48px;
+  }
+
+  .hero-art {
+    height: 280px;
+  }
+
+  .destination-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .destination-art {
+    height: 160px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero,
+  .destinations,
+  .travel-tips {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .travel-tips {
+    align-items: flex-start;
+    gap: 14px;
+  }
+
+  .tips-icon {
+    flex-basis: 42px;
+    height: 42px;
+  }
+}
